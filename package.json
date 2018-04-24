@@ -8,6 +8,12 @@
     "test": "vue-cli-service test",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yberkut/business-card-vue.git"
+  },
+  "author": "Iaroslav Berkut",
+  "license": "MIT",
   "dependencies": {
     "vue": "^2.5.13",
     "vue-router": "^3.0.1",
