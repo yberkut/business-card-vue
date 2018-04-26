@@ -1,12 +1,21 @@
 <template>
   <v-layout wrap>
-    <v-flex xs12 v-for="record in records" :key="record.title">
-      <v-layout wrap :class="styled.infoRecord">
-        <v-flex xs4 :class="styled.title">
-          {{record.title}}
+    <v-flex 
+      v-for="record in records" 
+      :key="record.title" 
+      xs12>
+      <v-layout 
+        :class="styled.infoRecord" 
+        wrap>
+        <v-flex 
+          :class="styled.title" 
+          xs4>
+          {{ record.title }}
         </v-flex>
-        <v-flex xs8 :class="styled.value">
-          {{record.value}}
+        <v-flex 
+          :class="styled.value" 
+          xs8>
+          {{ record.value }}
         </v-flex>
       </v-layout>
     </v-flex>

@@ -1,5 +1,7 @@
 <template>
-  <BaseImage :src="imageUrl" alt="avatar" />
+  <BaseImage 
+    :src="imageUrl" 
+    alt="avatar" />
 </template>
 
 <script>

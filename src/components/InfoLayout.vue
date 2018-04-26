@@ -1,9 +1,13 @@
 <template>
   <v-layout>
-    <v-flex xs12 sm8>
+    <v-flex 
+      xs12 
+      sm8>
       <Info />
     </v-flex>
-    <v-flex v-if="styled.breakpoint.smAndUp" sm4>
+    <v-flex 
+      v-if="styled.breakpoint.smAndUp" 
+      sm4>
       <QrCode />
     </v-flex>
   </v-layout>

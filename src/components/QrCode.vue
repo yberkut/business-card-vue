@@ -1,5 +1,9 @@
 <template>
-  <BaseImage :src="qrCode" alt="qr-code" adjust-size align="right" />
+  <BaseImage 
+    :src="qrCode" 
+    alt="qr-code" 
+    adjust-size 
+    align="right" />
 </template>
 
 <script>

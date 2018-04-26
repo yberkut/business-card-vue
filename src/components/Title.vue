@@ -1,10 +1,10 @@
 <template>
   <div :class="styled.titleContainer">
     <h1 :class="styled.titleText">
-      I'm <span class="ib-title-bold">{{fullName}}</span>
+      I'm <span class="ib-title-bold">{{ fullName }}</span>
     </h1>
     <span :class="styled.subtitle">
-      {{description}}
+      {{ description }}
     </span>
   </div>
 </template>

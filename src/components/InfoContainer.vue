@@ -1,17 +1,25 @@
 <template>
-  <v-container :class="styled.infoContainer" fill-height>
+  <v-container 
+    :class="styled.infoContainer" 
+    fill-height>
     <v-layout wrap>
-      <v-flex xs12 v-if="styled.breakpoint.smAndUp">
+      <v-flex 
+        v-if="styled.breakpoint.smAndUp" 
+        xs12>
         <Greetings background-color="#249ee0" />
       </v-flex>
-      <v-flex xs12 class="mt-2">
+      <v-flex 
+        xs12 
+        class="mt-2">
         <Title />
         <v-divider :class="styled.divider" />
       </v-flex>
       <v-flex xs12>
         <InfoLayout />
       </v-flex>
-      <v-flex xs12 class="mt-2">
+      <v-flex 
+        xs12 
+        class="mt-2">
         <SocialLayout />
       </v-flex>
     </v-layout>

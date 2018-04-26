@@ -1,12 +1,24 @@
 <template>
-  <div class="business-card elevation-2" :class="styled.businessCard">
-    <v-container class="pa-0" fill-height>
+  <div 
+    :class="styled.businessCard" 
+    class="business-card elevation-2">
+    <v-container 
+      class="pa-0" 
+      fill-height>
       <v-layout wrap>
-        <v-flex xs12 sm4 :class="styled.avatarContainer">
+        <v-flex 
+          :class="styled.avatarContainer" 
+          xs12 
+          sm4>
           <Avatar />
-          <Greetings v-if="styled.breakpoint.xsOnly" right-side background-color="#249ee0" />
+          <Greetings 
+            v-if="styled.breakpoint.xsOnly" 
+            right-side 
+            background-color="#249ee0" />
         </v-flex>
-        <v-flex xs12 sm8>
+        <v-flex 
+          xs12 
+          sm8>
           <InfoContainer />
         </v-flex>
       </v-layout>
@@ -26,16 +38,16 @@
       Greetings,
       Avatar
     },
-    mounted: function () {
-      // fetching data as soon as the component's been mounted
-      this.$store.dispatch('fetchData')
-    },
     computed: {
       styled() {
         const breakpoint = getBreakpoint(this)
         return { ...classes(breakpoint), breakpoint }
       }
-    }
+    },
+    mounted: function () {
+      // fetching data as soon as the component's been mounted
+      this.$store.dispatch('fetchData')
+    },
   }
 
   const classes = bp => ({

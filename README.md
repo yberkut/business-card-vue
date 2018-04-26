@@ -1,6 +1,5 @@
 # business-card-vue
-
-###### Personal business card example 
+> Personal business card example 
 
 ### Single page application with:
 - [Vue.js](https://vuejs.org/)
@@ -10,7 +9,7 @@
 ## Getting Started
 ```sh
 # clone it
-git clone ...
+git clone https://github.com/yberkut/business-card-vue.git
 
 # make it yours
 mv business-card-vue <YOUR PROJECT NAME>

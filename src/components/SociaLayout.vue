@@ -1,9 +1,16 @@
 <template>
-  <v-layout id="social-layout" wrap>
-    <v-flex xs9 sm12 class="social">
+  <v-layout 
+    id="social-layout" 
+    wrap>
+    <v-flex 
+      xs9 
+      sm12 
+      class="social">
       <Social />
     </v-flex>
-    <v-flex xs3 v-if="styled.breakpoint.xsOnly">
+    <v-flex 
+      v-if="styled.breakpoint.xsOnly" 
+      xs3>
       <QrCode />
     </v-flex>
   </v-layout>

@@ -1,5 +1,9 @@
 <template>
-  <div class="image" :style="styled.image" :alt="alt"></div>
+  <div
+    :style="styled.image"
+    :alt="alt"
+    class="image"
+  />
 </template>
 
 <script>

@@ -1,7 +1,13 @@
 <template>
   <div :class="styled.social">
-    <v-btn v-for="btn in social" :key="btn.name" :fab="styled.breakpoint.smAndDown" flat icon color="white">
-      <v-icon>{{btn.icon}}</v-icon>
+    <v-btn 
+      v-for="btn in social" 
+      :key="btn.name" 
+      :fab="styled.breakpoint.smAndDown" 
+      flat 
+      icon 
+      color="white">
+      <v-icon>{{ btn.icon }}</v-icon>
     </v-btn>
   </div>
 </template>

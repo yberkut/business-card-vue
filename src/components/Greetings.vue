@@ -1,22 +1,23 @@
 <template>
   <div :class="styled.greetings">
-    <svg viewBox="0 0 68 30" preserveAspectRatio="xMidYMid">
+    <svg
+      viewBox="0 0 68 30"
+      preserveAspectRatio="xMidYMid">
       <path
         :d="pathData"
         :stroke="borderColor"
-        stroke-width="1"
         :fill="backgroundColor"
-      >
-      </path>
+        stroke-width="1"
+      />
       <text
+        :fill="textColor"
         x="14"
         y="17"
-        :fill="textColor"
         font-family="AvenirNext-DemiBold, Avenir Next"
         font-size="12"
         font-weight="500"
       >
-        {{text}}
+        {{ text }}
       </text>
     </svg>
   </div>
@@ -40,7 +41,10 @@
 
   export default {
     props: {
-      rightSide: Boolean,
+      rightSide: {
+        type: Boolean,
+        default: false
+      },
       borderColor: {
         type: String,
         default: 'none'
